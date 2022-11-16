@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Helpdesk Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+     <!-- Welcome text -->
+     <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">WELCOME TO Leading <span>Edge</span> Solutions</div>
+                <div class="text-2">Helpdesk Dashboard</div>
+                <div class="text-2"><span>HIGH PRIORITY LOGS/ISSUES</span></div>
+                <!-- <div class="text-3"> <span class="typing"></span></div> -->
+
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Creating Main foarm and tables-->
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>#</label><label class="validation-error hide" id="numbersValidationError">This field is required.</label>
+                        <input type="text" name="numbers" id="numbers">
+                    </div>
+                    <div>
+                        <label>Log Number</label>
+                        <input type="text" name="lognumber" id="lognumber">
+                    </div>
+                    <div>
+                        <label>Category</label>
+                        <input type="text" name="category" id="category">
+                    </div>
+                    <div>
+                        <label>Consultant</label>
+                        <input type="text" name="consaltant" id="consaltant">
+                    </div>
+                    <div>
+                        <label>Updade</label>
+                        <input type="text" name="update" id="update">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Add">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Log Number</th>
+                            <th>Category</th>
+                            <th>Consaltant</th>
+                            <th>Update</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+     <!-- footer section start -->
+     <footer>
+        <span>Created By LES | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+
+    <!-- External JS file-->
+    <script src="script.js"></script>
+</body>
+
+</html>
