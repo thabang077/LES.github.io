@@ -55,7 +55,7 @@ section .title::after {
     color: #fff;
     background-color: #111;
     min-height: 500px;
-    margin-top: -16vh;
+    margin-top: -12vh;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -90,7 +90,7 @@ section .title::after {
 body > table{
     width: 100%;
     color: white;
-    margin-top: -42vh;
+    margin-top: -48vh;
 
 }
 
