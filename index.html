@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <title>Helpdesk Dashboard</title>
+    <title> HelpDesk DashBoard   </title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-     <!-- Welcome text -->
+     <!-- Welcome section start -->
      <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -23,34 +23,36 @@
         </div>
     </section>
 
-    <!-- Creating Main foarm and tables-->
+    
     <table>
         <tr>
             <td>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>#</label><label class="validation-error hide" id="numbersValidationError">This field is required.</label>
-                        <input type="text" name="numbers" id="numbers">
+                        <label>#</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
                     </div>
                     <div>
                         <label>Log Number</label>
-                        <input type="text" name="lognumber" id="lognumber">
+                        <input type="text" name="empCode" id="empCode">
                     </div>
                     <div>
                         <label>Category</label>
-                        <input type="text" name="category" id="category">
+                        <input type="text" name="salary" id="salary">
                     </div>
                     <div>
                         <label>Consultant</label>
-                        <input type="text" name="consaltant" id="consaltant">
+                        <input type="text" name="city" id="city">
                     </div>
                     <div>
-                        <label>Update</label>
+                        <label>Updade</label>
                         <input type="text" name="update" id="update">
                     </div>
+
                     <div  class="form-action-buttons">
                         <input type="submit" value="Add">
                     </div>
+                     
                 </form>
             </td>
             <td>
@@ -60,7 +62,7 @@
                             <th>#</th>
                             <th>Log Number</th>
                             <th>Category</th>
-                            <th>Consaltant</th>
+                            <th>Consultant</th>
                             <th>Update</th>
                             <th></th>
                         </tr>
@@ -78,7 +80,7 @@
         <span>Created By LES | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
 
-    <!-- External JS file-->
+
     <script src="script.js"></script>
 </body>
 

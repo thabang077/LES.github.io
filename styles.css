@@ -55,7 +55,7 @@ section .title::after {
     color: #fff;
     background-color: #111;
     min-height: 500px;
-    margin-top: -12vh;
+    margin-top: -16vh;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -70,27 +70,26 @@ section .title::after {
 }
 
 .home .home-content .text-1 {
-    font-size: 42px;
+    font-size: 47px;
 }
 
 .home .home-content .text-2 {
-    font-size: 70px;
+    font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 
 .home .home-content .text-3 {
-    font-size: 37px;
+    font-size: 40px;
     margin: 5px 0;
 }
-
 
 
 
 body > table{
     width: 100%;
     color: white;
-    margin-top: -48vh;
+    margin-top: -44vh;
 
 }
 
@@ -100,20 +99,28 @@ table{
     }
 table.list{
     width:100%;
+
 }
 
 th{
     background-color: #5a5a5a;
     color: white;
+
 }
 
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    vertical-align: top;
+
+}
+table .list{
+    font-size: 40px;
 }
 
 
+/* Define the hover highlight color for the table row */
 
 input[type=text], input[type=number] {
     width: 100%;
@@ -158,6 +165,7 @@ label.validation-error{
     display:none;
 }
 
+/* footer section styling */
 
 footer {
     background-color:  orangered;
