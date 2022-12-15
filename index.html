@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <title> HelpDesk DashBoard   </title>
+    <title>Helpdesk Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-     <!-- Welcome section start -->
+     <!-- Welcome text -->
      <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -23,64 +23,49 @@
         </div>
     </section>
 
-    
-    <table>
-        <tr>
-            <td>
-                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                    <div>
-                        <label>#</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                        <input type="text" name="fullName" id="fullName">
-                    </div>
-                    <div>
-                        <label>Log Number</label>
-                        <input type="text" name="empCode" id="empCode">
-                    </div>
-                    <div>
-                        <label>Category</label>
-                        <input type="text" name="salary" id="salary">
-                    </div>
-                    <div>
-                        <label>Consultant</label>
-                        <input type="text" name="city" id="city">
-                    </div>
-                    <div>
-                        <label>Updade</label>
-                        <input type="text" name="update" id="update">
-                    </div>
+    <!-- Creating Main foarm and tables-->
+   
+   
+         <table id="tab">
+                   <tr>
+                           <th> # </th>
+                           <th> Log Number  </th>
+                           <th> Consultant   </th>
+                           <th> Update</th>
+                           <th> Categories</th>
+                        
+                   </tr>
+                   <tr id ="row">
+                           <td> <input type="number" id="number"> </td>
+                           <td>  <input type="number" id="lognumber">  </td>
+                           <td>  <input type="text" id="consultant">  </td>
+                           <td>  <input type="text" id="update">  </td>
+                           <td >
+                                 <select id="group">
+                                    <option disabled style="background-color:gray ;" selected class="w" id="cmbopt1"> Categories</option>
+                                    <option value="invoicing" style="background-color: rgba(138, 41, 41, 0.705);">Invoicing</option>
+                                    <option value="workflow" style="background-color:orange">Workflow</option>
+                                    <option value="barcoding" style="background-color:blue">Barcoding</option>	 							   
+                                    </select>
+                          </td>
+                   </tr>
+                   
+                   
+         </table>
 
-                    <div  class="form-action-buttons">
-                        <input type="submit" value="Add">
-                    </div>
-                     
-                </form>
-            </td>
-            <td>
-                <table class="list" id="employeeList">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Log Number</th>
-                            <th>Category</th>
-                            <th>Consultant</th>
-                            <th>Update</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
-
+         <div>
+            <button onclick="newTableRow()">Add</button>
+           </div>
      <!-- footer section start -->
-     <footer>
+    
+    
+    
+    
+    <!-- <footer>
         <span>Created By LES | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
-    </footer>
-
-
+    </footer>-->
+    
+    <!-- External JS file-->
     <script src="script.js"></script>
 </body>
 
